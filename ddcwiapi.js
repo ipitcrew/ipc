@@ -1,5 +1,5 @@
 (function(WIAPI) {
-    var API = new WIAPI('ipitcrew');
+    var API = new WIAPI('ipitcrew-text');
     API.subscribe('page-load-v1', function(ev) {
         API.utils.getConfig().then(function(config) {
             API.insert('page-footer', function(elem, meta) {
